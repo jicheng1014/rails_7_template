@@ -42,16 +42,14 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
-
-gem 'sidekiq'
-gem 'friendly_id'
-gem 'cssbundling-rails'
-gem 'devise'
-gem 'annotate_models', group: :development
-gem 'factory_bot'
-gem 'database_cleaner-active_record', group: :test
-gem 'rspec-rails', group: [:development, :test]
-
+gem "sidekiq"
+gem "friendly_id"
+gem "cssbundling-rails"
+gem "devise"
+gem "factory_bot_rails"
+gem "annotate_models", group: :development
+gem "database_cleaner-active_record", group: :test
+gem "rspec-rails", group: [:development, :test]
 
 # Use Sass to process CSS
 # gem "sassc-rails"
