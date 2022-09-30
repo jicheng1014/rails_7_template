@@ -1,0 +1,47 @@
+<%= form_with(model: tunnel) do |form| %>
+  <% if tunnel.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(tunnel.errors.count, "error") %> prohibited this tunnel from being saved:</h2>
+
+      <ul>
+        <% tunnel.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :user_id, style: "display: block" %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div>
+    <%= form.label :password_digest, style: "display: block" %>
+    <%= form.text_field :password_digest %>
+  </div>
+
+  <div>
+    <%= form.label :level, style: "display: block" %>
+    <%= form.text_field :level %>
+  </div>
+
+  <div>
+    <%= form.label :latest_started_at, style: "display: block" %>
+    <%= form.text_field :latest_started_at %>
+  </div>
+
+  <div>
+    <%= form.label :latest_ended_at, style: "display: block" %>
+    <%= form.text_field :latest_ended_at %>
+  </div>
+
+  <div>
+    <%= form.label :aasm_state, style: "display: block" %>
+    <%= form.text_field :aasm_state %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

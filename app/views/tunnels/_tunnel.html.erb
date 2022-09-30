@@ -1,0 +1,32 @@
+<div id="<%= dom_id tunnel %>">
+  <p>
+    <strong>User:</strong>
+    <%= tunnel.user_id %>
+  </p>
+
+  <p>
+    <strong>Password digest:</strong>
+    <%= tunnel.password_digest %>
+  </p>
+
+  <p>
+    <strong>Level:</strong>
+    <%= tunnel.level %>
+  </p>
+
+  <p>
+    <strong>Latest started at:</strong>
+    <%= tunnel.latest_started_at %>
+  </p>
+
+  <p>
+    <strong>Latest ended at:</strong>
+    <%= tunnel.latest_ended_at %>
+  </p>
+
+  <p>
+    <strong>Aasm state:</strong>
+    <%= tunnel.aasm_state %>
+  </p>
+
+</div>
