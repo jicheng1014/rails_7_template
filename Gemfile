@@ -43,6 +43,7 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 gem "bootsnap", require: false
 
 gem "sidekiq"
+gem "sidekiq-scheduler"
 gem "friendly_id"
 gem "cssbundling-rails"
 gem "devise"
