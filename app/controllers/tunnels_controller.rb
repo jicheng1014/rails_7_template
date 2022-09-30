@@ -21,7 +21,7 @@ class TunnelsController < ApplicationController
 
   # POST /tunnels or /tunnels.json
   def create
-    @tunnel = Tunnel.new(tunnel_params)
+    @tunnel = current_user.tunnels.new(tunnel_params)
 
     respond_to do |format|
       if @tunnel.save
@@ -58,13 +58,14 @@ class TunnelsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_tunnel
-      @tunnel = Tunnel.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def tunnel_params
-      params.require(:tunnel).permit(:user_id, :password_digest, :level, :latest_started_at, :latest_ended_at, :aasm_state)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_tunnel
+    @tunnel = current_user.tunnels.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def tunnel_params
+    params.require(:tunnel).permit(:password, :level, :latest_started_at, :latest_ended_at, :aasm_state)
+  end
 end

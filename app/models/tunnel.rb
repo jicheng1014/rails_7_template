@@ -21,5 +21,6 @@
 #  fk_rails_...  (user_id => users.id)
 #
 class Tunnel < ApplicationRecord
+  has_secure_password
   belongs_to :user
 end
