@@ -1,14 +1,16 @@
-<p style="color: green"><%= notice %></p>
+<div class="container mx-auto">
+  <p style="color: green"><%= notice %></p>
 
-<h1>Tunnels</h1>
+  <h1>Tunnels</h1>
 
-<div id="tunnels">
-  <% @tunnels.each do |tunnel| %>
-    <%= render tunnel %>
-    <p>
-      <%= link_to "Show this tunnel", tunnel %>
-    </p>
-  <% end %>
+  <div id="tunnels">
+    <% @tunnels.each do |tunnel| %>
+      <%= render tunnel %>
+      <p>
+        <%= link_to "Show this tunnel", tunnel %>
+      </p>
+    <% end %>
+  </div>
+
+  <%= link_to "New tunnel", new_tunnel_path %>
 </div>
-
-<%= link_to "New tunnel", new_tunnel_path %>
