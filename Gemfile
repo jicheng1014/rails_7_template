@@ -51,6 +51,9 @@ gem "devise"
 gem "annotate", group: :development
 gem "database_cleaner-active_record", group: :test
 gem "rspec-rails", group: [:development, :test]
+gem "strong_migrations"
+gem "rails-settings-cached"
+gem "ransack"
 
 # Use Sass to process CSS
 # gem "sassc-rails"
