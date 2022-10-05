@@ -163,6 +163,8 @@ GEM
     nokogiri (1.13.8-x86_64-darwin)
       racc (~> 1.4)
     orm_adapter (0.5.0)
+    pagy (5.10.1)
+      activesupport
     pg (1.4.3)
     public_suffix (5.0.0)
     puma (5.6.5)
@@ -304,6 +306,7 @@ DEPENDENCIES
   friendly_id
   importmap-rails
   jbuilder
+  pagy (~> 5.10)
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4)

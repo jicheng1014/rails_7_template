@@ -54,6 +54,7 @@ gem "rspec-rails", group: [:development, :test]
 gem "strong_migrations"
 gem "rails-settings-cached"
 gem "ransack"
+gem 'pagy', '~> 5.10'
 
 # Use Sass to process CSS
 # gem "sassc-rails"
