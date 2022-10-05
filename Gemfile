@@ -55,6 +55,7 @@ gem "strong_migrations"
 gem "rails-settings-cached"
 gem "ransack"
 gem 'pagy', '~> 5.10'
+gem "view_component"
 
 # Use Sass to process CSS
 # gem "sassc-rails"
