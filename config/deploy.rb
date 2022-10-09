@@ -29,7 +29,7 @@ set :sidekiq_roles, :sidekiq # 可指定
 # set :pty, true
 
 # Default value for :linked_files is []
-append :linked_files, 'config/database.yml', 'config/application.yml', 'newrelic.yml'
+append :linked_files, 'config/database.yml', 'config/application.yml', 'config/master.key', 'config/credentials.yml.enc'
 
 # Default value for linked_dirs is []
 append :linked_dirs, 'log', 'node_modules', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system', 'public/uploads', 'public/assets', 'public/packs'

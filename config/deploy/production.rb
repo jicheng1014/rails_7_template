@@ -13,7 +13,7 @@ set :nvm_map_bins, %w{node npm yarn}
 # set :nvm_node, 'v10.16.0'
 # web 上跑 nginx
 # db 那migrate db
-server "hk2", user: 'deploy', roles: %w{app web sidekiq}
+server "hk2", user: 'deploy', roles: %w{app web sidekiq db}
 
 
 # server-based syntax
